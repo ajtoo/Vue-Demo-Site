@@ -20,7 +20,17 @@
       </div>
     </section>
     <angled-banner/>
-    <h1 class="section-heading"><span class="orange-text">Lorem</span> Ipsum</h1>
+    <h1 class="section-heading spacing-below"><span class="orange-text">Lorem</span> Ipsum</h1>
+    <section class="content-row spacing-below">
+      <div class="sm-col-6">
+        <p class="text-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ellamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+        </p>
+      </div>
+      <div class="sm-col-6">
+        <button class="cta">Button</button>
+      </div>
+    </section>
     <section class="content-row stats">
       <figure class="stat">
         <animated-number :number="240"/>
@@ -35,7 +45,31 @@
         <p class="light-orange-text">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</p>
       </figure>
     </section>
-    <h1 class="section-heading"><span class="orange-text">Lorem</span> Ipsum</h1>
+    <h1 class="section-heading spacing-below"><span class="orange-text">Lorem</span> Ipsum</h1>
+    <section class="content-row spacing-below">
+      <div class="sm-col-6">
+        <h4 class="orange-text paragraph-header">Lorem ipsum dolor sit amet</h4>
+        <h5 class="light-orange-text paragraph-header spacing-below">Lorem ipsum dolor sit amet lorem</h5>
+        <p class="text-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ellamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+        </p>
+      </div>
+      <div class="sm-col-6">
+        <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/img1_jxgi73.jpg"/>
+      </div>
+    </section>
+    <section class="content-row spacing-below reverse-stack">
+      <div class="sm-col-6">
+        <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/img2_m4defs.jpg"/>
+      </div>
+      <div class="sm-col-6">
+        <h4 class="orange-text paragraph-header">Lorem ipsum dolor sit amet</h4>
+        <h5 class="light-orange-text paragraph-header spacing-below">Lorem ipsum dolor sit amet lorem</h5>
+        <p class="text-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ellamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+        </p>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -61,6 +95,12 @@ export default {
 </script>
 
 <style>
+h4 {
+  font-size: 1.75rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
 .container {
   min-height: 100vh;
   display: flex;
@@ -95,6 +135,7 @@ export default {
   position: relative;
   padding: .5em 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -129,6 +170,28 @@ export default {
   width: 15vw;
 }
 
+.paragraph-header {
+  width: 85%;
+  text-align: left;
+}
+
+.text-paragraph {
+  text-align: left;
+  width: 85%;
+}
+
+.spacing-below {
+  margin-bottom: 3rem;
+}
+
+.row-image {
+  max-width: 100%;
+}
+
+.reverse-stack {
+
+}
+
 @media (max-width: 768px) {
   [class*="sm-col"] {
     width: 100%
@@ -136,6 +199,18 @@ export default {
 
   .note-row {
     flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stat {
+    margin-bottom: 1em;
+  }
+
+  .reverse-stack {
+    flex-direction: column-reverse;
   }
 }
 
