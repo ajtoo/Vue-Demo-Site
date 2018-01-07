@@ -19,6 +19,7 @@
         <note/>
       </div>
     </section>
+    <angled-banner/>
   </section>
 </template>
 
@@ -28,13 +29,15 @@ import Navbar from '~/components/Navbar.vue'
 import ImageSlider from '~/components/ImageSlider.vue'
 import HeadlineCTA from '~/components/HeadlineCTA.vue'
 import Note from '~/components/Note.vue'
+import AngledBanner from '~/components/AngledBanner.vue'
 
 export default {
   components: {
     Navbar,
     ImageSlider,
     HeadlineCTA,
-    Note
+    Note,
+    AngledBanner
   }
 }
 </script>
