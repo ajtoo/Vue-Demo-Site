@@ -2,6 +2,8 @@
 
 > A Demo site using of Vue.js
 
+## About the Project
+
 ## Build Setup
 
 ``` bash
@@ -18,3 +20,9 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
+## Future Directions/TODOs
+
+- pull the buttons out into their own components
+- pull some of the css up into a global css file
+- improve how the content slider behaves when resized
+- integrate bootstrap or other grid framework instead of building my own quick and dirty grid
