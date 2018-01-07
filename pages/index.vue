@@ -3,7 +3,7 @@
     <navbar/>
     <image-slider/>
     <headline-c-t-a/>
-    <section class="note-row">
+    <section class="content-row">
       <div class="sm-col-6">
         <note/>
       </div>
@@ -11,7 +11,7 @@
         <note/>
       </div>
     </section>
-    <section class="note-row">
+    <section class="content-row">
       <div class="sm-col-6">
         <note/>
       </div>
@@ -20,6 +20,22 @@
       </div>
     </section>
     <angled-banner/>
+    <h1 class="section-heading"><span class="orange-text">Lorem</span> Ipsum</h1>
+    <section class="content-row stats">
+      <figure class="stat">
+        <animated-number :number="240"/>
+        <p class="light-orange-text">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</p>
+      </figure>
+      <figure class="stat">
+        <animated-number :number="150"/>
+        <p class="light-orange-text">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</p>
+      </figure>
+      <figure class="stat">
+        <animated-number :number="509"/>
+        <p class="light-orange-text">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</p>
+      </figure>
+    </section>
+    <h1 class="section-heading"><span class="orange-text">Lorem</span> Ipsum</h1>
   </section>
 </template>
 
@@ -30,6 +46,7 @@ import ImageSlider from '~/components/ImageSlider.vue'
 import HeadlineCTA from '~/components/HeadlineCTA.vue'
 import Note from '~/components/Note.vue'
 import AngledBanner from '~/components/AngledBanner.vue'
+import AnimatedNumber from '~/components/AnimatedNumber.vue'
 
 export default {
   components: {
@@ -37,7 +54,8 @@ export default {
     ImageSlider,
     HeadlineCTA,
     Note,
-    AngledBanner
+    AngledBanner,
+    AnimatedNumber
   }
 }
 </script>
@@ -81,12 +99,34 @@ export default {
   align-items: center;
 }
 
-.note-row {
+.content-row {
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.section-heading {
+  margin-top: 8rem;
+  font-size: 2rem;
+}
+
+.orange-text {
+  color: #f76b1c;
+}
+
+.light-orange-text {
+  color: #f3b160;
+}
+
+.stats {
+  justify-content: space-around;
+}
+
+.stat {
+  font-weight: bold;
+  width: 15vw;
 }
 
 @media (max-width: 768px) {
