@@ -14,7 +14,8 @@
     top: -12rem;
     width: 100%;
     max-width: 1355px;
-    margin-left: 20%
+    margin-left: 20%;
+    margin-bottom: -6rem;
   }
 
   .headline {

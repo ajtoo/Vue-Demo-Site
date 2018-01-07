@@ -3,19 +3,38 @@
     <navbar/>
     <image-slider/>
     <headline-c-t-a/>
+    <section class="note-row">
+      <div class="sm-col-6">
+        <note/>
+      </div>
+      <div class="sm-col-6">
+        <note/>
+      </div>
+    </section>
+    <section class="note-row">
+      <div class="sm-col-6">
+        <note/>
+      </div>
+      <div class="sm-col-6">
+        <note/>
+      </div>
+    </section>
   </section>
 </template>
 
 <script>
+
 import Navbar from '~/components/Navbar.vue'
 import ImageSlider from '~/components/ImageSlider.vue'
 import HeadlineCTA from '~/components/HeadlineCTA.vue'
+import Note from '~/components/Note.vue'
 
 export default {
   components: {
     Navbar,
     ImageSlider,
-    HeadlineCTA
+    HeadlineCTA,
+    Note
   }
 }
 </script>
@@ -49,4 +68,32 @@ export default {
 .links {
   padding-top: 15px;
 }
+
+.sm-col-6 {
+  width: 50%;
+  position: relative;
+  padding: .5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-row {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  [class*="sm-col"] {
+    width: 100%
+  }
+
+  .note-row {
+    flex-direction: column;
+  }
+}
+
 </style>

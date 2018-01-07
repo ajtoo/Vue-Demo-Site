@@ -662,8 +662,8 @@
   }
 
   .gallery .control-button {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
+    color: #eee;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .gallery .control-button:hover {
