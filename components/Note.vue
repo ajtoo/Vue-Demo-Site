@@ -1,7 +1,7 @@
 <template>
     <figure class="note">
-        <img class="note-icon" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176158/page-icon_f6kpd2.svg"/>
-        <p>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus</p>
+        <img class="note-icon" src="https://res.cloudinary.com/ajhtoo/image/upload/c_scale,w_26/v1515176158/page-icon_f6kpd2.svg"/>
+        <p><slot>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus</slot></p>
     </figure>
 </template>
 
@@ -10,12 +10,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     width: 30vw;
     text-align: left;
   }
   .note-icon {
-    margin: .75em;
+    margin-right: .75em;
+    max-width: 26px;
   }
 
   @media (max-width: 768px) {
