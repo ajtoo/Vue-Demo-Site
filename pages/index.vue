@@ -2,17 +2,20 @@
   <section class="container">
     <navbar/>
     <image-slider/>
+    <headline-c-t-a/>
   </section>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue'
 import ImageSlider from '~/components/ImageSlider.vue'
+import HeadlineCTA from '~/components/HeadlineCTA.vue'
 
 export default {
   components: {
     Navbar,
-    ImageSlider
+    ImageSlider,
+    HeadlineCTA
   }
 }
 </script>
