@@ -1,9 +1,19 @@
 <template>
   <header class="headline-cta">
     <h1 class="headline">Lorem Ipsum Lorem Ipsum</h1>
-    <button class="cta">Button</button>
+    <button class="cta" @click="buttonClicked">Button</button>
   </header>
 </template>
+
+<script>
+  export default {
+    methods: {
+      buttonClicked () {
+        alert('fill in your button click function here')
+      }
+    }
+  }
+</script>
 
 <style>
   .headline-cta {

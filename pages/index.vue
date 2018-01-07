@@ -28,7 +28,7 @@
         </p>
       </div>
       <div class="sm-col-6">
-        <button class="cta">Button</button>
+        <button class="cta" @click="buttonClicked">Button</button>
       </div>
     </section>
     <section class="content-row stats">
@@ -90,6 +90,11 @@ export default {
     Note,
     AngledBanner,
     AnimatedNumber
+  },
+  methods: {
+    buttonClicked () {
+      alert('fill in your button click function here')
+    }
   }
 }
 </script>
