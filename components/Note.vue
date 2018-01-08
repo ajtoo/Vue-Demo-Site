@@ -6,6 +6,7 @@
 </template>
 
 <style>
+<style scoped>
   .note {
     display: flex;
     flex-direction: row;

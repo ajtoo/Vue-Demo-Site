@@ -16,18 +16,6 @@
 </script>
 
 <style>
-  .headline-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    position: relative;
-    top: -12rem;
-    width: 100%;
-    max-width: 1355px;
-    margin-left: 20%;
-    margin-bottom: -6rem;
-  }
-
   .headline {
     position: relative;
     font-size: 2.75rem;

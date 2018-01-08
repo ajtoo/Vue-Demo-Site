@@ -39,7 +39,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .animated-number {
     font-size: 3em;
     font-weight: bold;
