@@ -74,14 +74,14 @@ export function getContext (context, app) {
     isServer: !!context.isServer,
     isClient: !!context.isClient,
     isStatic: process.static,
-    isDev: false,
+    isDev: true,
     isHMR: context.isHMR || false,
     app: app,
     store: context.store,
     route: (context.to ? context.to : context.route),
     payload: context.payload,
     error: context.error,
-    base: '/',
+    base: '/Vue-Demo-Site/',
     env: {}
   }
   const next = context.next
