@@ -16,6 +16,7 @@ module.exports = {
   router: {
     base: '/Vue-Demo-Site/'
   },
+  plugins: ['~/plugins/vue-observe-visibility'],
   /*
   ** Customize the progress bar color
   */
