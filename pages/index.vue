@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <navbar/>
+    <button id="contact" @click="showModal = true"/>
     <image-slider/>
     <headline-c-t-a/>
     <section class="content-row">
@@ -70,6 +71,7 @@
         </p>
       </div>
     </section>
+    <modal v-if="showModal" @close="showModal = false"/>
   </section>
 </template>
 
@@ -81,6 +83,7 @@ import HeadlineCTA from '~/components/HeadlineCTA.vue'
 import Note from '~/components/Note.vue'
 import AngledBanner from '~/components/AngledBanner.vue'
 import AnimatedNumber from '~/components/AnimatedNumber.vue'
+import Modal from '~/components/Modal.vue'
 
 export default {
   components: {
@@ -89,7 +92,13 @@ export default {
     HeadlineCTA,
     Note,
     AngledBanner,
-    AnimatedNumber
+    AnimatedNumber,
+    Modal
+  },
+  data: function () {
+    return {
+      showModal: false
+    }
   },
   methods: {
     buttonClicked () {
@@ -162,6 +171,10 @@ h5 {
   color: #f76b1c;
 }
 
+.medium-orange-text {
+  color: #e49535;
+}
+
 .light-orange-text {
   color: #f3b160;
 }
@@ -217,6 +230,26 @@ h5 {
   .reverse-stack {
     flex-direction: column-reverse;
   }
+}
+
+#contact {
+  background-image: url("https://res.cloudinary.com/ajhtoo/image/upload/v1515176156/envelope-icon_dxf4fo.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  background-color: orange;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+  position: fixed;
+  padding: 1rem 2.5rem 1rem 1rem;
+  z-index: 3;
+  width: 42px;
+  height: 28px;
+  top: 50%;
+  cursor: pointer;
+  display: flex;
+  align-self: right;
 }
 
 </style>
