@@ -12,6 +12,7 @@
   .angled-banner {
     background-image: url(https://res.cloudinary.com/ajhtoo/image/upload/v1515176158/slanted-gradient-background_kgru5b.svg);
     background-repeat: no-repeat;
+    background-position-x: center;
     width: 100%;
     display: flex;
     justify-content: center;
