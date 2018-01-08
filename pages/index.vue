@@ -250,6 +250,7 @@ h5 {
   cursor: pointer;
   display: flex;
   align-self: right;
+  right: 0;
 }
 
 </style>
