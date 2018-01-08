@@ -39,7 +39,7 @@
   .cta {
     margin-top: 1rem;
     font-size: 1.15rem;
-    background: linear-gradient(90deg,#f76b1c,#f3b160);
+    background: linear-gradient(90deg,#f36819,#f7931d);
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);

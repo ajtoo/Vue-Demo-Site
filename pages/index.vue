@@ -168,7 +168,7 @@ h5 {
 }
 
 .orange-text {
-  color: #f76b1c;
+  color: #f36819;
 }
 
 .medium-orange-text {
@@ -176,7 +176,7 @@ h5 {
 }
 
 .light-orange-text {
-  color: #f3b160;
+  color: #f7931d;
 }
 
 .stats {
