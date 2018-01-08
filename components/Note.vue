@@ -1,11 +1,28 @@
 <template>
-    <figure class="note">
+    <figure class="note" v-observe-visibility="visibilityChanged" v-bind:class="{'fade-in': visible}">
         <img class="note-icon" src="https://res.cloudinary.com/ajhtoo/image/upload/c_scale,w_26/v1515176158/page-icon_f6kpd2.svg"/>
         <p><slot>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus</slot></p>
     </figure>
 </template>
 
-<style>
+<script>
+export default {
+  data: function () {
+    return {
+      visible: false
+    }
+  },
+  methods: {
+    visibilityChanged (isVisible, entry) {
+      this.visible = isVisible
+    }
+  },
+  mounted: function () {
+    this.visible = true
+  }
+}
+</script>
+
 <style scoped>
   .note {
     display: flex;

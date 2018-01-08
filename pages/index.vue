@@ -22,16 +22,7 @@
     </section>
     <angled-banner/>
     <h1 class="section-heading spacing-below"><span class="orange-text">Lorem</span> Ipsum</h1>
-    <section class="content-row spacing-below">
-      <div class="sm-col-6">
-        <p class="text-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ellamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-        </p>
-      </div>
-      <div class="sm-col-6">
-        <button class="cta" @click="buttonClicked">Button</button>
-      </div>
-    </section>
+    <text-c-t-a/>
     <section class="content-row stats">
       <figure class="stat">
         <animated-number :number="240"/>
@@ -47,30 +38,8 @@
       </figure>
     </section>
     <h1 class="section-heading spacing-below"><span class="orange-text">Lorem</span> Ipsum</h1>
-    <section class="content-row spacing-below">
-      <div class="sm-col-6">
-        <h4 class="orange-text paragraph-header">Lorem ipsum dolor sit amet</h4>
-        <h5 class="light-orange-text paragraph-header spacing-below">Lorem ipsum dolor sit amet lorem</h5>
-        <p class="text-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ellamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-        </p>
-      </div>
-      <div class="sm-col-6">
-        <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/img1_jxgi73.jpg"/>
-      </div>
-    </section>
-    <section class="content-row spacing-below reverse-stack">
-      <div class="sm-col-6">
-        <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/img2_m4defs.jpg"/>
-      </div>
-      <div class="sm-col-6">
-        <h4 class="orange-text paragraph-header">Lorem ipsum dolor sit amet</h4>
-        <h5 class="light-orange-text paragraph-header spacing-below">Lorem ipsum dolor sit amet lorem</h5>
-        <p class="text-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ellamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-        </p>
-      </div>
-    </section>
+    <text-image-right/>
+    <text-image-left/>
     <modal v-if="showModal" @close="showModal = false"/>
   </section>
 </template>
@@ -84,6 +53,9 @@ import Note from '~/components/Note.vue'
 import AngledBanner from '~/components/AngledBanner.vue'
 import AnimatedNumber from '~/components/AnimatedNumber.vue'
 import Modal from '~/components/Modal.vue'
+import TextCTA from '~/components/TextCTA.vue'
+import TextImageRight from '~/components/TextImageRight.vue'
+import TextImageLeft from '~/components/TextImageLeft.vue'
 
 export default {
   components: {
@@ -93,7 +65,10 @@ export default {
     Note,
     AngledBanner,
     AnimatedNumber,
-    Modal
+    Modal,
+    TextCTA,
+    TextImageRight,
+    TextImageLeft
   },
   data: function () {
     return {
@@ -263,6 +238,42 @@ h5 {
   display: flex;
   align-self: right;
   right: 0;
+}
+
+  .fade-in {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+  }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes x-rotate {
+  0% {transform: rotateX(0);}
+  100% {transform: rotateX(360deg);}
 }
 
 </style>
