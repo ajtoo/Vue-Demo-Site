@@ -1,7 +1,7 @@
 <template>
   <section class="content-row spacing-below" v-observe-visibility="visibilityChanged" v-bind:class="{'fade-in': visible}">
     <div class="sm-col-6">
-      <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/img2_m4defs.jpg"/>
+      <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/Vue%20Demo%20Site/img2_m4defs.jpg"/>
     </div>
     <div class="sm-col-6">
       <h4 class="orange-text paragraph-header">Lorem ipsum dolor sit amet</h4>

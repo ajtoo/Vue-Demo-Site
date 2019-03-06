@@ -220,7 +220,7 @@ h5 {
 }
 
 #contact {
-  background-image: url("https://res.cloudinary.com/ajhtoo/image/upload/v1515176156/envelope-icon_dxf4fo.svg");
+  background-image: url("https://res.cloudinary.com/ajhtoo/image/upload/v1515176156/Vue%20Demo%20Site/envelope-icon_dxf4fo.svg");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;

@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="sm-col-6">
-      <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/img1_jxgi73.jpg"/>
+      <img class="row-image" src="https://res.cloudinary.com/ajhtoo/image/upload/v1515176157/Vue%20Demo%20Site/img1_jxgi73.jpg"/>
     </div>
   </section>  
 </template>

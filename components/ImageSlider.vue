@@ -4,13 +4,13 @@
     <div id="item-2" class="control-operator"></div>
     <div id="item-3" class="control-operator"></div>
     <figure class="item">
-      <img src="https://res.cloudinary.com/ajhtoo/image/upload/c_scale,h_509/v1515176157/hero-img_ff2blz.jpg"/>
+      <img src="https://res.cloudinary.com/ajhtoo/image/upload/c_scale,h_509/v1515176157/Vue%20Demo%20Site/hero-img_ff2blz.jpg"/>
     </figure>
     <figure class="item">
-      <img src="https://res.cloudinary.com/ajhtoo/image/upload/c_crop,h_509,w_1355/v1515176159/iStock-503300108_jdys3y.jpg"/>
+      <img src="https://res.cloudinary.com/ajhtoo/image/upload/c_scale,h_509,w_1355/v1515176159/Vue%20Demo%20Site/iStock-503300108_jdys3y.jpg"/>
     </figure>
     <figure class="item">
-      <img src="https://res.cloudinary.com/ajhtoo/image/upload/c_crop,h_509,w_1355/v1515176165/iStock-613672992_cyvmxr.jpg"/>
+      <img src="https://res.cloudinary.com/ajhtoo/image/upload/c_scale,h_509,w_1355/v1515176165/Vue%20Demo%20Site/iStock-613672992_cyvmxr.jpg"/>
     </figure>
     <div class="controls">
       <a href="#item-1" class="control-button">•</a>
